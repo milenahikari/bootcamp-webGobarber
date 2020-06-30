@@ -1,0 +1,163 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/pages/SignIn/index.tsx":
+/*!************************************!*\
+  !*** ./src/pages/SignIn/index.tsx ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
+/* harmony import */ var _unform_web__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @unform/web */ "./node_modules/@unform/web/dist/index.es.js");
+/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
+/* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/logo.svg */ "./src/assets/logo.svg");
+/* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_logo_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles */ "./src/pages/SignIn/styles.ts");
+/* harmony import */ var _components_Input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/Input */ "./src/components/Input/index.tsx");
+/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Button */ "./src/components/Button/index.tsx");
+/* harmony import */ var _utils_getValidationErrors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../utils/getValidationErrors */ "./src/utils/getValidationErrors.ts");
+var _jsxFileName = "C:\\Users\\milen\\OneDrive\\Documentos\\projetos-bootcamp\\goBarber\\gobarber-web\\src\\pages\\SignIn\\index.tsx";
+
+
+
+
+
+
+
+
+
+
+const SignIn = () => {
+  const formRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  const handleSubmit = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async data => {
+    try {
+      var _formRef$current;
+
+      (_formRef$current = formRef.current) === null || _formRef$current === void 0 ? void 0 : _formRef$current.setErrors({});
+      const schema = yup__WEBPACK_IMPORTED_MODULE_3__["object"]().shape({
+        email: yup__WEBPACK_IMPORTED_MODULE_3__["string"]().required('E-mail obrigatório').email('Digite um e-mail válido'),
+        password: yup__WEBPACK_IMPORTED_MODULE_3__["string"]().required('Senha obrigatória')
+      });
+      await schema.validate(data, {
+        abortEarly: false // Faz com que seja retornado todos os erros, por padrão já retorna o primeiro
+
+      });
+    } catch (err) {
+      var _formRef$current2;
+
+      const errors = Object(_utils_getValidationErrors__WEBPACK_IMPORTED_MODULE_8__["default"])(err);
+      (_formRef$current2 = formRef.current) === null || _formRef$current2 === void 0 ? void 0 : _formRef$current2.setErrors(errors);
+    }
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_5__["Container"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_5__["Content"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_logo_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "GoBarber",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_unform_web__WEBPACK_IMPORTED_MODULE_2__["Form"], {
+    ref: formRef,
+    onSubmit: handleSubmit,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 11
+    }
+  }, "Fa\xE7a seu logon"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Input__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    icon: react_icons_fi__WEBPACK_IMPORTED_MODULE_1__["FiMail"],
+    name: "email",
+    type: "email",
+    placeholder: "E-mail",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Input__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    icon: react_icons_fi__WEBPACK_IMPORTED_MODULE_1__["FiLock"],
+    name: "password",
+    type: "password",
+    placeholder: "Senha",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Button__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    type: "submit",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 11
+    }
+  }, "Entrar"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  }, "Esqueci minha senha")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_1__["FiLogIn"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 11
+    }
+  }), "Criar conta")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_5__["Background"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 7
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SignIn);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.8edf2d3142e29e06773f.hot-update.js.map

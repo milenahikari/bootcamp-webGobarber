@@ -1,0 +1,757 @@
+(this["webpackJsonpgobarber-web"] = this["webpackJsonpgobarber-web"] || []).push([["main"],{
+
+/***/ "./src/App.tsx":
+/*!*********************!*\
+  !*** ./src/App.tsx ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_global__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/global */ "./src/styles/global.ts");
+/* harmony import */ var _pages_SignIn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/SignIn */ "./src/pages/SignIn/index.tsx");
+var _jsxFileName = "C:\\Users\\milen\\OneDrive\\Documentos\\projetos-bootcamp\\goBarber\\gobarber-web\\src\\App.tsx";
+
+
+ // import SignUp from './pages/SignUp';
+
+const src = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_SignIn__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9,
+    columnNumber: 5
+  }
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_global__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10,
+    columnNumber: 5
+  }
+}));
+
+/* harmony default export */ __webpack_exports__["default"] = (src);
+
+/***/ }),
+
+/***/ "./src/assets/logo.svg":
+/*!*****************************!*\
+  !*** ./src/assets/logo.svg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/logo.a49b07ec.svg";
+
+/***/ }),
+
+/***/ "./src/assets/sign-in-background.png":
+/*!*******************************************!*\
+  !*** ./src/assets/sign-in-background.png ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/sign-in-background.6eac314f.png";
+
+/***/ }),
+
+/***/ "./src/components/Button/index.tsx":
+/*!*****************************************!*\
+  !*** ./src/components/Button/index.tsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles */ "./src/components/Button/styles.ts");
+var _jsxFileName = "C:\\Users\\milen\\OneDrive\\Documentos\\projetos-bootcamp\\goBarber\\gobarber-web\\src\\components\\Button\\index.tsx";
+
+
+
+const Button = ({
+  children,
+  ...rest
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__["Container"], Object.assign({
+  type: "button"
+}, rest, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8,
+    columnNumber: 3
+  }
+}), children);
+
+/* harmony default export */ __webpack_exports__["default"] = (Button);
+
+/***/ }),
+
+/***/ "./src/components/Button/styles.ts":
+/*!*****************************************!*\
+  !*** ./src/components/Button/styles.ts ***!
+  \*****************************************/
+/*! exports provided: Container */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! polished */ "./node_modules/polished/dist/polished.esm.js");
+
+
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button`
+  background: #ff9000;
+  height: 56px;
+  border-radius: 10px;
+  border: 0;
+  color: #312e38;
+  padding: 0 16px;
+  width: 100%;
+  margin-top: 16px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background: ${Object(polished__WEBPACK_IMPORTED_MODULE_1__["shade"])(0.2, '#ff9000')};
+  }
+`;
+
+/***/ }),
+
+/***/ "./src/components/Input/index.tsx":
+/*!****************************************!*\
+  !*** ./src/components/Input/index.tsx ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
+/* harmony import */ var _unform_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @unform/core */ "./node_modules/@unform/core/dist/index.es.js");
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles */ "./src/components/Input/styles.ts");
+var _jsxFileName = "C:\\Users\\milen\\OneDrive\\Documentos\\projetos-bootcamp\\goBarber\\gobarber-web\\src\\components\\Input\\index.tsx";
+
+
+
+
+
+const Input = ({
+  name,
+  icon: Icon,
+  ...rest
+}) => {
+  const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  const [isFocused, setIsFocused] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [isFilled, setIsFilled] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    fieldName,
+    defaultValue,
+    error,
+    registerField
+  } = Object(_unform_core__WEBPACK_IMPORTED_MODULE_2__["useField"])(name);
+  const handleInputFocus = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => {
+    setIsFocused(true);
+  }, []);
+  const handleInputBlur = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(() => {
+    var _inputRef$current;
+
+    setIsFocused(false); // Se o input tiver um valor, ele transforma em booleano
+
+    setIsFilled(!!((_inputRef$current = inputRef.current) === null || _inputRef$current === void 0 ? void 0 : _inputRef$current.value));
+  }, []);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    registerField({
+      name: fieldName,
+      ref: inputRef.current,
+      path: 'value'
+    });
+  }, [fieldName, registerField]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+    isErrored: !!error,
+    isFilled: isFilled,
+    isFocused: isFocused,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 5
+    }
+  }, Icon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
+    size: 20,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 16
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", Object.assign({
+    onFocus: handleInputFocus,
+    onBlur: handleInputBlur,
+    defaultValue: defaultValue,
+    ref: inputRef
+  }, rest, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 7
+    }
+  })), error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_3__["Error"], {
+    title: error,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_1__["FiAlertCircle"], {
+    color: "#c53030",
+    size: "20",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 11
+    }
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Input);
+
+/***/ }),
+
+/***/ "./src/components/Input/styles.ts":
+/*!****************************************!*\
+  !*** ./src/components/Input/styles.ts ***!
+  \****************************************/
+/*! exports provided: Container, Error */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Error", function() { return Error; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _Tooltip__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Tooltip */ "./src/components/Tooltip/index.tsx");
+
+
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div`
+  background: #232129;
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  border: 2px solid #232129;
+  color: #666360;
+
+  & + div {
+    margin-top: 8px;
+  }
+
+  ${props => props.isErrored && styled_components__WEBPACK_IMPORTED_MODULE_0__["css"]`
+      border-color: #c53030;
+    `}
+
+  ${props => props.isFocused && styled_components__WEBPACK_IMPORTED_MODULE_0__["css"]`
+      color: #ff9000;
+      border-color: #ff9000;
+    `}
+
+  ${props => props.isFilled && styled_components__WEBPACK_IMPORTED_MODULE_0__["css"]`
+      color: #ff9000;
+    `}
+
+  svg {
+    margin-right: 16px;
+  }
+  input {
+    flex: 1;
+    background: transparent;
+    border: 0;
+    color: #f4ede8;
+
+    &placeholder {
+      color: #666360;
+    }
+  }
+`;
+const Error = Object(styled_components__WEBPACK_IMPORTED_MODULE_0__["default"])(_Tooltip__WEBPACK_IMPORTED_MODULE_1__["default"])`
+  height: 20px;
+  margin-left: 16px;
+
+  svg {
+    margin: 0;
+  }
+
+  span {
+    background: #c53030;
+    color: #fff;
+
+    &::before {
+      border-color: #c53030 transparent;
+    }
+  }
+`;
+
+/***/ }),
+
+/***/ "./src/components/Tooltip/index.tsx":
+/*!******************************************!*\
+  !*** ./src/components/Tooltip/index.tsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles */ "./src/components/Tooltip/styles.ts");
+var _jsxFileName = "C:\\Users\\milen\\OneDrive\\Documentos\\projetos-bootcamp\\goBarber\\gobarber-web\\src\\components\\Tooltip\\index.tsx";
+
+
+
+const Tooltip = ({
+  title,
+  className,
+  children
+}) => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    className: className,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 5
+    }
+  }, children, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 7
+    }
+  }, title));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Tooltip);
+
+/***/ }),
+
+/***/ "./src/components/Tooltip/styles.ts":
+/*!******************************************!*\
+  !*** ./src/components/Tooltip/styles.ts ***!
+  \******************************************/
+/*! exports provided: Container */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div`
+  position: relative;
+
+  span {
+    background: #ff9000;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.4;
+    visibility: hidden;
+
+    position: absolute;
+    bottom: calc(100% + 12px);
+    width: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #312e38;
+
+    &::before {
+      content: '';
+      border-style: solid;
+      border-color: #ff9000 transparent;
+      border-width: 6px 6px 0 6px;
+      top: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &:hover span {
+    opacity: 1;
+    visibility: visible;
+  }
+`;
+
+/***/ }),
+
+/***/ "./src/index.tsx":
+/*!***********************!*\
+  !*** ./src/index.tsx ***!
+  \***********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.tsx");
+var _jsxFileName = "C:\\Users\\milen\\OneDrive\\Documentos\\projetos-bootcamp\\goBarber\\gobarber-web\\src\\index.tsx";
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.StrictMode, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 6,
+    columnNumber: 3
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 7,
+    columnNumber: 5
+  }
+})), document.getElementById('root'));
+
+/***/ }),
+
+/***/ "./src/pages/SignIn/index.tsx":
+/*!************************************!*\
+  !*** ./src/pages/SignIn/index.tsx ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_icons_fi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-icons/fi */ "./node_modules/react-icons/fi/index.esm.js");
+/* harmony import */ var _unform_web__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @unform/web */ "./node_modules/@unform/web/dist/index.es.js");
+/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
+/* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/logo.svg */ "./src/assets/logo.svg");
+/* harmony import */ var _assets_logo_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_logo_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles */ "./src/pages/SignIn/styles.ts");
+/* harmony import */ var _components_Input__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/Input */ "./src/components/Input/index.tsx");
+/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Button */ "./src/components/Button/index.tsx");
+/* harmony import */ var _utils_getValidationErrors__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../utils/getValidationErrors */ "./src/utils/getValidationErrors.ts");
+var _jsxFileName = "C:\\Users\\milen\\OneDrive\\Documentos\\projetos-bootcamp\\goBarber\\gobarber-web\\src\\pages\\SignIn\\index.tsx";
+
+
+
+
+
+
+
+
+
+
+const SignIn = () => {
+  const formRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  const handleSubmit = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])(async data => {
+    try {
+      var _formRef$current;
+
+      (_formRef$current = formRef.current) === null || _formRef$current === void 0 ? void 0 : _formRef$current.setErrors({});
+      const schema = yup__WEBPACK_IMPORTED_MODULE_3__["object"]().shape({
+        email: yup__WEBPACK_IMPORTED_MODULE_3__["string"]().required('E-mail obrigatório').email('Digite um e-mail válido'),
+        password: yup__WEBPACK_IMPORTED_MODULE_3__["string"]().required('Senha obrigatória')
+      });
+      await schema.validate(data, {
+        abortEarly: false // Faz com que seja retornado todos os erros, por padrão já retorna o primeiro
+
+      });
+    } catch (err) {
+      var _formRef$current2;
+
+      const errors = Object(_utils_getValidationErrors__WEBPACK_IMPORTED_MODULE_8__["default"])(err);
+      (_formRef$current2 = formRef.current) === null || _formRef$current2 === void 0 ? void 0 : _formRef$current2.setErrors(errors);
+    }
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_5__["Container"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_5__["Content"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _assets_logo_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "GoBarber",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_unform_web__WEBPACK_IMPORTED_MODULE_2__["Form"], {
+    ref: formRef,
+    onSubmit: handleSubmit,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 11
+    }
+  }, "Fa\xE7a seu logon"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Input__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    icon: react_icons_fi__WEBPACK_IMPORTED_MODULE_1__["FiMail"],
+    name: "email",
+    type: "email",
+    placeholder: "E-mail",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Input__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    icon: react_icons_fi__WEBPACK_IMPORTED_MODULE_1__["FiLock"],
+    name: "password",
+    type: "password",
+    placeholder: "Senha",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Button__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    type: "submit",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 11
+    }
+  }, "Entrar"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  }, "Esqueci minha senha")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "/",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_icons_fi__WEBPACK_IMPORTED_MODULE_1__["FiLogIn"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 11
+    }
+  }), "Criar conta")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles__WEBPACK_IMPORTED_MODULE_5__["Background"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 7
+    }
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SignIn);
+
+/***/ }),
+
+/***/ "./src/pages/SignIn/styles.ts":
+/*!************************************!*\
+  !*** ./src/pages/SignIn/styles.ts ***!
+  \************************************/
+/*! exports provided: Container, Content, Background */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Content", function() { return Content; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Background", function() { return Background; });
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var polished__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! polished */ "./node_modules/polished/dist/polished.esm.js");
+/* harmony import */ var _assets_sign_in_background_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/sign-in-background.png */ "./src/assets/sign-in-background.png");
+/* harmony import */ var _assets_sign_in_background_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_sign_in_background_png__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+const Container = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div`
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+`;
+const Content = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  width: 100%;
+  max-width: 700px;
+
+  form {
+    margin: 80px 0;
+    width: 340px;
+    text-align: center;
+
+    h1 {
+      margin-bottom: 24px;
+    }
+
+    a {
+      color: #f4ede8;
+      display: block;
+      margin-top: 24px;
+      text-decoration: none;
+      transition: color 0.2s;
+
+      &:hover {
+        color: ${Object(polished__WEBPACK_IMPORTED_MODULE_1__["shade"])(0.2, '#f4ede8')};
+      }
+    }
+  }
+
+  > a {
+    color: #ff9000;
+    margin-top: 24px;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s;
+
+    &:hover {
+      color: ${Object(polished__WEBPACK_IMPORTED_MODULE_1__["shade"])(0.2, '#ff9000')};
+    }
+
+    svg {
+      margin-right: 16px;
+    }
+  }
+`;
+const Background = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div`
+  flex: 1;
+  background: url(${_assets_sign_in_background_png__WEBPACK_IMPORTED_MODULE_2___default.a}) no-repeat center;
+  background-size: cover;
+`;
+
+/***/ }),
+
+/***/ "./src/styles/global.ts":
+/*!******************************!*\
+  !*** ./src/styles/global.ts ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (styled_components__WEBPACK_IMPORTED_MODULE_0__["createGlobalStyle"]`
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #312e38;
+    color: #fff;
+    -webkit-font-smoothing: antialiased
+  }
+
+  body, input, button {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+  }
+
+  h1, h2, h3, h4, h5, h6, strong{
+    font-weight: 500;
+  }
+
+  button {
+    cursor: pointer;
+  }
+`);
+
+/***/ }),
+
+/***/ "./src/utils/getValidationErrors.ts":
+/*!******************************************!*\
+  !*** ./src/utils/getValidationErrors.ts ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getValidateErrors; });
+function getValidateErrors(err) {
+  const validationErrors = {};
+  err.inner.forEach(error => {
+    validationErrors[error.path] = error.message;
+  });
+  return validationErrors;
+}
+
+/***/ }),
+
+/***/ 1:
+/*!***************************************************************************************************************!*\
+  !*** multi (webpack)/hot/dev-server.js ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.tsx ***!
+  \***************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\milen\OneDrive\Documentos\projetos-bootcamp\goBarber\gobarber-web\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! C:\Users\milen\OneDrive\Documentos\projetos-bootcamp\goBarber\gobarber-web\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\milen\OneDrive\Documentos\projetos-bootcamp\goBarber\gobarber-web\src\index.tsx */"./src/index.tsx");
+
+
+/***/ })
+
+},[[1,"runtime-main",1]]]);
+//# sourceMappingURL=main.chunk.js.map
