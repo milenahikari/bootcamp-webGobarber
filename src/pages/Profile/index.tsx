@@ -54,7 +54,7 @@ const Profile: React.FC = () => {
               then: Yup.string().required('Campo obrigatório'),
               otherwise: Yup.string(),
             })
-            .oneOf([Yup.ref('password'), null, 'Confirmação inválida']),
+            .oneOf([Yup.ref('password'), null], 'Confirmação inválida'),
         });
 
         await schema.validate(data, {
